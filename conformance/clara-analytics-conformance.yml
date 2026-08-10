@@ -1,0 +1,86 @@
+generated: '2026-08-09'
+method: searched
+source: https://claraanalytics.com/products/claims-document-intelligence-pro/
+name: CLARA Analytics — conformance and compliance claims
+summary: >-
+  CLARA Analytics publishes no machine-readable API contract, so no spec-derived
+  conformance can be asserted. What it does publish, repeated verbatim across six
+  product pages, is a security and compliance claim: HIPAA compliance, an annual
+  SOC 2 certification (named as "SOC 2, Type 2" on the Claims Document Intelligence
+  Pro page), and data encryption. These are vendor claims on marketing pages, not a
+  trust center, an audit report, or a certificate — there is no trust.claraanalytics.com,
+  no /security page, and no security.txt. Recorded here with the exact source URLs
+  so a reader can see the same surface we did.
+standards:
+- id: soc2
+  name: SOC 2 (Type 2)
+  conforms: true
+  basis: vendor-claim
+  evidence:
+    quote: >-
+      Rest easy with HIPAA compliance, annual SOC 2, Type 2 certification, and data
+      encryption that meets or exceeds industry standards in safeguarding your data.
+    url: https://claraanalytics.com/products/claims-document-intelligence-pro/
+    http_status: 200
+    fetched: '2026-08-09'
+  note: >-
+    Five other product pages carry the same sentence with "annual SOC 2 certification"
+    (no Type named). No report, bridge letter, or trust portal is published.
+- id: hipaa
+  name: HIPAA
+  conforms: true
+  basis: vendor-claim
+  evidence:
+    quote: >-
+      Rest easy with HIPAA compliance, annual SOC 2 certification, and data encryption
+      that meets or exceeds industry standards in safeguarding your data.
+    url: https://claraanalytics.com/products/optics/
+    http_status: 200
+    fetched: '2026-08-09'
+  note: >-
+    Consistent with the product: CLARA processes medical notes, bills and treatment
+    records inside casualty claims.
+- id: msp-section-111
+  name: Medicare Secondary Payer / CMS reporting
+  conforms: true
+  basis: product-scope
+  evidence:
+    quote: >-
+      CMS-approvable MSP Reports in Minutes. CLARA's MSP Compliance module streamlines
+      future medical cost projection report production from weeks to minutes.
+    url: https://claraanalytics.com/product/msp-compliance-overview/
+    http_status: 200
+    fetched: '2026-08-09'
+  note: >-
+    A regulatory regime the product addresses on the customer's behalf, not a
+    conformance claim about CLARA's own interfaces.
+- id: gdpr
+  name: GDPR / CCPA
+  conforms: unknown
+  basis: not-published
+  evidence:
+    url: https://claraanalytics.com/privacy-policy/
+    http_status: 200
+    fetched: '2026-08-09'
+  note: >-
+    The only GDPR strings on the site come from the cookie-consent widget. The privacy
+    policy is published; no DPA, subprocessor list, or regional data-residency
+    statement was found.
+not_assertable:
+- id: oauth2
+  reason: No public authentication documentation or OpenAPI securitySchemes.
+- id: openapi
+  reason: No machine-readable specification published anywhere (see x-coverage).
+- id: rfc9457
+  reason: No public error reference or contract to derive problem types from.
+- id: rfc9116
+  reason: >-
+    /.well-known/security.txt returns 404 on claraanalytics.com, portal.claraanalytics.com
+    and api.claraanalytics.com.
+gaps_for_provider:
+- Publish a trust center (or a /security page) that names the auditor, the report
+  period, and how to request the SOC 2 report — the claim currently lives only in a
+  marketing sentence.
+- Publish a security.txt (RFC 9116) with a disclosure policy and contact.
+- Publish the "pre-built APIs" as an OpenAPI at a stable URL; the integration surface
+  is real but only visible inside the Guidewire Marketplace listing.

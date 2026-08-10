@@ -42,5 +42,21 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-CLARA Analytics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+CLARA Analytics is an AI-as-a-service provider for casualty insurance claims, serving carriers,
+MGAs/MGUs, reinsurers, third-party administrators and self-insured organizations. Its CLARAty.ai
+platform applies document intelligence, natural language processing, image recognition and
+predictive models to medical notes, legal demand packages, bills and other claim documents across
+workers' compensation, auto and general liability.
+
+- Website: https://claraanalytics.com/
+- Platform and products: https://claraanalytics.com/platform-products/
+- Guidewire Marketplace listing: https://marketplace.guidewire.com/product/clara-analytics-claratyai-claimcenter/01t3n00000GfLKHAA3
+- Customer portal: https://portal.claraanalytics.com/
+
+## API surface
+
+CLARA markets "pre-built APIs for simple integration" on every product page and operates an API host
+at `api.claraanalytics.com`, but publishes no developer portal, API reference, or machine-readable
+specification. `docs.claraanalytics.com` is a dangling CNAME to an unclaimed Document360 project. The
+only integration surface it publishes is the Built-by-Guidewire ClaimCenter listing in the Guidewire
+Marketplace. See `x-coverage` in `apis.yml`.

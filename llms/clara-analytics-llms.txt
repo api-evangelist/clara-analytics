@@ -1,0 +1,55 @@
+# CLARA Analytics
+
+> CLARA Analytics is an AI-as-a-service provider for casualty insurance claims, serving carriers, MGAs/MGUs, reinsurers, third-party administrators and self-insured organizations. Its CLARAty.ai platform applies document intelligence, natural language processing, image recognition and predictive models to medical notes, legal demand packages, bills and other claim documents across workers' compensation, auto and general liability.
+
+Generated: 2026-08-09
+Method: generated
+Source: API Evangelist enrichment pipeline, from apis.yml and probed public pages
+Note: CLARA Analytics does not publish an llms.txt. https://claraanalytics.com/llms.txt returned 404 on 2026-08-09. This file is API Evangelist's index of the company's public surface, not a document the provider serves.
+
+## API surface
+
+CLARA Analytics markets "pre-built APIs for simple integration" on every product page, and operates a live API host at api.claraanalytics.com (an AWS ALB behind nginx, which answers 404 for every unauthenticated path). It publishes **no** developer portal, API reference, OpenAPI, AsyncAPI, GraphQL SDL, Postman collection, MCP server, or agent card. The documentation subdomain docs.claraanalytics.com is a dangling CNAME to an unclaimed Document360 project that answers HTTP 200 with "Sorry! This project does not exist." for every path.
+
+The only published integration surface is a Built-by-Guidewire listing on the Guidewire Marketplace.
+
+- [CLARAty.ai for ClaimCenter, Guidewire Marketplace](https://marketplace.guidewire.com/product/clara-analytics-claratyai-claimcenter/01t3n00000GfLKHAA3): the ClaimCenter integration, version 1.4.0, Guidewire Olos release
+- [Partnerships](https://claraanalytics.com/partnerships/): partner and core-system ecosystem
+- [Customer portal](https://portal.claraanalytics.com/): the CLARAty.ai application, customer credentials required
+
+## Platform and products
+
+- [Platform and products](https://claraanalytics.com/platform-products/): the CLARAty.ai claims intelligence platform
+- [Claims Document Intelligence Pro](https://claraanalytics.com/products/claims-document-intelligence-pro/): document review and extraction across medical, legal and billing documents
+- [Triage](https://claraanalytics.com/products/triage/): early identification of claims likely to escalate
+- [Fraud](https://claraanalytics.com/products/clara-fraud/): fraud signal detection across claims
+- [Litigation](https://claraanalytics.com/products/litigation/): attorney-involvement and litigation risk
+- [Treatment](https://claraanalytics.com/products/treatment/): provider and care-path selection
+- [Optics](https://claraanalytics.com/products/optics/): benchmarking against industry claims data
+- [MSP Compliance](https://claraanalytics.com/product/msp-compliance-overview/): CMS-approvable Medicare Secondary Payer reports
+- [Lines of business](https://claraanalytics.com/lines-of-business/): workers' compensation, auto and general liability
+
+## Company
+
+- [About](https://claraanalytics.com/about/)
+- [Why CLARA](https://claraanalytics.com/why-clara/)
+- [Blog](https://claraanalytics.com/blog/) — [RSS](https://claraanalytics.com/feed/)
+- [News](https://claraanalytics.com/news/)
+- [Press releases](https://claraanalytics.com/press-releases/)
+- [Case studies](https://claraanalytics.com/case-studies/)
+- [Resources](https://claraanalytics.com/resources/)
+- [Contact](https://claraanalytics.com/contact-us/)
+- [Request a demo](https://claraanalytics.com/demo/) — the only public access path; there is no self-service sign-up
+
+## Security and compliance
+
+Claimed on the product pages, not in a trust center: HIPAA compliance, annual SOC 2 (Type 2 on the Document Intelligence Pro page), and data encryption. No security.txt, no /security page, no trust.claraanalytics.com, no bug bounty.
+
+- [Conformance and compliance claims, with sources](conformance/clara-analytics-conformance.yml)
+- [Domain security probe](security/clara-analytics-domain-security.yml)
+- [Terms of use](https://claraanalytics.com/terms-of-use/)
+- [Privacy policy](https://claraanalytics.com/privacy-policy/)
+
+## Optional
+
+- [API Evangelist profile source](https://raw.githubusercontent.com/api-evangelist/clara-analytics/refs/heads/main/apis.yml)
