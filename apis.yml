@@ -10,6 +10,17 @@ description: 'CLARA Analytics is an AI-as-a-service provider for casualty insura
   CLARA markets pre-built APIs for integration with RMIS and core claims systems and
   ships a Built-by-Guidewire integration for ClaimCenter through the Guidewire Marketplace,
   but publishes no public developer portal, API reference, or machine-readable specification.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://claraanalytics.com/wp-content/uploads/2023/02/cropped-clara-favicon-192x192.png
 url: https://raw.githubusercontent.com/api-evangelist/clara-analytics/refs/heads/main/apis.yml
 x-type: company
