@@ -1,0 +1,28 @@
+generated: '2026-10-14'
+method: searched
+checked:
+- guidewire/integrations/guidewire-integration-edges.yml
+source:
+- guidewire/integrations/guidewire-integration-edges.yml
+edges:
+- partner_name: Guidewire (own)
+  partner: guidewire
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://marketplace.guidewire.com/product/01tPW000009tGi5YAE/01tPW000009tGi5YAE
+  mirror_of: guidewire/integrations/guidewire-integration-edges.yml
+  apps:
+  - CLARA Analytics Integration for Document Intelligence Pro for ClaimCenter
+  - CLARA Analytics CLARAty.ai - ClaimCenter
+  listing_count: 2
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: Integration; Claims Estimating & Servicing;Content Management; ClaimCenter
+  badges:
+  - Built by Guidewire
+  - 'Partner tier: Advantage'
